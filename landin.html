@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <link rel="stylesheet" href="landin.css">
+
+    <title>OIBSIP</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">SELP</h1>
+        <ul class="navlink">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="btn"><a href="#"></a>Contacts</li>
+        </ul>
+        <label for="" class="menubtn">
+            <i class="fas fa-bars menu-btn"></i>
+        </label>
+    </nav>
+    <header>
+        <div class="head">
+            <h2 style="font-size: 7vmin;">selp travels</h2>
+            <div class="line"></div>
+            <h1>explore the world on your own</h1>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1 style="text-align: center; margin: 15px; font-size: 7vmin">UPCOMING EVENTS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./eiffeltower.jpg" alt="">
+                <h4>Emily in Europe</h4>
+                <p class="ev">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste impedit amet ipsa harum itaque error.
+                <p style="margin-top: 10px;"><a href="#" class="ctn" style="align-items: justify;">More</a></p>
+                </p>
+            </div>
+            <div class="col">
+                <img src="./taj.jpg" alt="" style="width: 250px">
+                <h4>India heritage tour</h4>
+                <p class="ev">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste impedit amet ipsa harum itaque error.
+                    <p style="margin-top: 10px;"><a href="#" class="ctn" style="align-items: justify;">More</a></p>
+                </p>
+                
+            </div>
+            <div class="col">
+                <img src="./japan.jpg" alt="">
+                <h4>joota to Japan</h4>
+                 <p class="ev">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste reiciendis impedit dignissimos laboriosam voluptas.
+                    <p style="margin-top: 10px;"><a href="#" class="ctn" style="align-items: justify;">More</a></p>
+                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+       <div class="excontent">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line" style="margin-top: -35px; background-color: chocolate;"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At beatae illum doloremque, veritatis repellat tenetur, repellendus nihil quisquam suscipit voluptatibus, reiciendis ab fugiat et in!
+            <p style="margin-top: 20px;"><a href="" class="ctn">Learn more</a></p>
+        </p> 
+       </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="tourscol">
+                <h1>UPCOMING PACKAGES</h1>
+                <div class="line" style="margin-top: -30px;"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a nulla incidunt eligendi consectetur minima, ullam aspernatur quas enim tenetur sed expedita dolore aliquid magnam, inventore dignissimos! Distinctio minus dicta praesentium nobis? Saepe, nisi. Culpa?<p style="margin-top: 20px;"><a href="" class="ctn">More Tours</a></p></p>
+            </div>
+            <div class="imgcol">
+                <div class="gallery">
+                    <img src="travel_1.jpg" alt="">
+                    <img src="travel_2.jpg" alt="">
+                    <img src="travel_3.jpg" alt="">
+                    <img src="travel_4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>123 Fifth block GKP9087 Gorakhpur , Uttar pradesh, India</p>
+        <div class="media">
+            <a href="#" target="_blank"><i class="fa-solid fa-phone"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-meta"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Copyright @2023 SELP TRAVELS</p>
+    </section>
+    <script>
+        const menuBtn=document.querySelector('.menubtn');
+        const navLink=document.querySelector('.navlink');
+        menuBtn.addEventListener('click',()=>{
+            navLink.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

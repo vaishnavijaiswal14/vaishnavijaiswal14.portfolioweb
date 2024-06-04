@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <link rel="stylesheet" href="temp.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <form id="caltemp" onsubmit="caltemp(); return false">
+            <h1>Temperature Convertor <i class="fa-solid fa-temperature-low"></i></h1>
+            <label for="temp">Enter the temperature to convert</label>
+            <br>
+            <span>
+                <input type="number" name="temp" id="temp" value="0">
+                <select name="temp_unit" id="temp_unit">
+                    <option value="cel">&#176;Celsius</option>
+                    <option value="fah">&#176;Fahrenheit</option>
+                    <option value="kel">Kelvin</option>
+                </select>
+            </span>
+            <br>
+            <input type="submit" name="temp" id="submit" value="Convert">
+            <br>
+            <div id="result"></div>
+            <br>
+            <div id="result2"></div>
+        </form>
+    </div>
+    <script>
+        const caltemp = () =>{
+            const inputTemp=parseFloat(document.getElementById('temp').value);
+            const tempSelected=document.getElementById('temp_unit');
+            const valueTemp=temp_unit.options[tempSelected.selectedIndex].value;
+
+            //celsius to fahrenheit
+            const celtoFah = (cel) => 
+            {
+                let fahrenheit=((cel*9/5)+32).toFixed(1);
+                return fahrenheit;
+            }
+            //fah to cell
+            const fahtoCel=(fah) =>
+            {
+                let celsius=((fah-32)*5/9).toFixed(1);
+                return celsius;
+            }
+            const keltoCel=(kel) =>
+            {
+                let celsius=(kel-273.15).toFixed(1);
+                return celsius;
+            }
+            const celtoKel=(cel) =>
+            {
+                let kelvin=(parseFloat(cel)+273.15).toFixed(1);
+                return kelvin;
+            }
+            const keltoFah=(kel) =>
+            {
+                let fahrenheit=((parseFloat(kel)-273.15)* 9/5 + 32).toFixed(1);
+                return fahrenheit;
+            }
+            const fahtoKel=(fah) =>
+            {
+                let kelvin=((parseFloat(fah)-32)* 5/9 + 273.15).toFixed(1);
+                return kelvin;
+            }
+
+            if (valueTemp=='cel')
+            {
+                document.getElementById("result").innerHTML=celtoFah(inputTemp)+ "&#176; Fahrenheit";
+                document.getElementById("result2").innerHTML=celtoKel(inputTemp)+ "Kelvin";
+            }
+            else if(valueTemp=='kel')
+            {
+                document.getElementById("result").innerHTML=keltoCel(inputTemp)+ "&#176; Celsius";
+                document.getElementById("result2").innerHTML=keltoFah(inputTemp)+ "&#176; Fahrenheit";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML=fahtoCel(inputTemp)
+                + "&#176; Celsius";
+                document.getElementById("result2").innerHTML=fahtoKel(inputTemp)
+                + "Kelvin";  
+            }
+        }
+    </script>
+</body>
+</html>

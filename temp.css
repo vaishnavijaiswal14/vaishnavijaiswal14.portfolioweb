@@ -1,0 +1,102 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html
+{
+    overflow-x: hidden;
+    position:relative;
+    display:flex;
+    width:100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightskyblue;
+    background-size: cover;
+    background-position: center;
+
+}
+h1{
+    font-size:50px;
+    color:black;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 4px 4px gray;
+}
+i
+{
+    color:red;
+}
+form
+{
+    margin:80px;
+    background-color:darkgray;
+    font-family: 'poppins';
+    box-sizing: content-box;
+    display: block;
+    padding:30px;
+    border-radius: 4px;
+    opacity:0.8;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 50vh;
+    width:50vw;
+}
+input[type="number"], select
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.3vmin ;
+    font-weight: 500;
+    padding:10px;
+    margin:3px;
+    border-radius: 4px; 
+    border:none;     
+}
+label
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vmin;
+           padding:10px;
+           width:90%;
+           font-weight: 600;
+}
+.container
+{
+    display: flex;
+}
+input[type="submit"]
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vmin ;
+    font-weight: 500;
+    padding:10px;
+    border-radius: 4px;   
+    border:none;
+    margin:15px;
+    background-color: mediumspringgreen;
+}
+select{
+    background-color: rgb(247, 145, 57);
+}
+select:hover
+{
+    background-color: antiquewhite;
+    color:orangered;
+    font-weight: 500;
+    font-size: 2.3vmin;
+}
+input[type="submit"]:hover
+{
+    background-color:forestgreen;
+    box-shadow:2px 2px 5px hotpink;
+}
+#result,#result2
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vmin ;
+    font-weight: 600;
+    color:crimson;
+}

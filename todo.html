@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./todo.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <title>To do list</title>  
+</head>
+<body>
+        <h1>Task List</h1>
+        <h2>- Vaishnavi Jaiswal</h2>
+   <form action="">
+        <input type="text" placeholder="Enter a task" class="todo-input">
+        <div class="dropdown">
+            <button class="dropdown-toggle" id="dropdownMenuButton">
+                <i class="far fa-calendar"></i>  
+                 <i class="far fa-clock"></i>
+            </button>
+            <div class="dropdown-content">
+              <!-- Dropdown content here -->
+              <a href="#"><input type="date" class="todo-input" id="date"></a>
+              <a href="#"><input type="time" class="todo-input" id="time"></a>
+            </div>
+          </div>
+          <button class="todo-button" type="submit">
+            <i class="fas fa-plus-circle fa-lg"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+
+   </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+        <script src="./todo.js"></script>
+</body>
+</html>

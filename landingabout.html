@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: 'lobster Two';
+        }
+        body
+        {
+            position:relative;
+            display:flex;
+            width:100%;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: url(pexels-min-an-1406866.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .head
+        {
+            text-align: center;
+            margin-top:10px;
+
+        }
+        .head h1
+        {
+            font-size:50px;
+            color:black;
+            margin-bottom: 10px;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 4px 4px gray;
+        }
+        .head h4
+        {
+            margin-top: -15px;
+            font-family:'satisfy';
+        }
+        h2
+        {
+            font-size:30px;
+        }
+        .about,.creator
+        {
+            display:flex;
+            align-items: center;
+            width:85%;
+            margin:auto;
+        }
+        .about img
+        {
+            margin-left: -10px;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            flex:0 50%;
+            height:auto;
+        }
+        .content
+        {
+            padding:35px;
+        }
+        .content h2
+        {
+            color:darkslategrey;
+            font-family: 'satisfy';
+            font-size: 44px;
+            margin:15px 0px;
+        }
+        .content p
+        {
+            color:darkcyan;
+            font-weight: 500;
+            opacity:2;
+            font-size:30px;
+        }
+        .more
+        {
+            font-size: 25px;
+            font-family:'sans serif';
+            display:inline;
+            color: #fff;
+            background-color:mediumseagreen;
+            border:none;
+            border-radius: 5px;
+            padding:12px 20px;
+            cursor:cell;
+        }
+        .more:hover
+        {
+            background-color: springgreen;
+        }
+        .creator video
+        {
+            clip-path: circle(50% at 50% 50%);
+            width:20%;
+        }
+        .creator h5,h6
+        {
+            font-size: 30px;
+            text-align: justify;
+            padding:35px;
+        }
+        @media (max-width:768px)
+        {
+            .about
+            {
+                flex-direction: column;
+            }
+            .about img
+            {
+                flex:0 100%;
+                max-width:100%;
+            }
+            .content{
+                flex:0 100%;
+                max-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>SELP</h1>
+        <h4>Self help !</h4>
+        <h2>About Us</h2>
+    </div>
+    <section class="about">
+        <img src="lofi-digital-anthro-hd-wallpaper-preview.jpg">
+        <div class="content">
+            <h2>Be Your Own Muse!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium nostrum voluptatem reiciendis alias molestias veniam recusandae, tenetur amet, aspernatur, corporis sunt id. Officiis maiores quidem eius ex, obcaecati magnam. Tempora!</p>
+            <button class="more">Read More ></button> 
+        </div>
+    </section>
+    <section class="creator">
+            <h6>Our Creator</h6>
+            <h5>Vaishnavi Jaiswal</h5>
+            <video src="me.mp4" autoplay  loop>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea explicabo consequatur quos architecto quaerat.</p>
+    </section>
+</body>
+</html>

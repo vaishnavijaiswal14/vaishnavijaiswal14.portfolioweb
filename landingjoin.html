@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <style>
+        *
+        {
+            box-sizing: content-box;
+        }
+        h1
+        {
+            font-size:50px;
+            color:black;
+            margin-bottom: 10px;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 4px 4px gray;
+        }
+        body
+        {
+            position:relative;
+            display:flex;
+            width:100%;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: url(pexels-min-an-1406866.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        form
+        {
+            margin:60px;
+            background-color:darkgray;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            padding:5px;
+            margin-top:0px;
+            border-radius: 4px;
+            opacity:0.8;
+        }
+        h4
+        {
+            margin-top:-23px;
+        }
+        header
+        {
+            margin-left: 60px;
+            margin-right: 60px;
+            padding:10px;
+            background-color:mediumspringgreen;
+            opacity:0.5;
+            border-radius: 4px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        p,input[type="text"],input[type="email"],input[type="password"],textarea,select
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           padding:10px;
+           width:90%;
+            border-radius: 4px;
+        }
+        input[type="text"],input[type="email"],input[type="password"],textarea,select
+        {
+            border:1px solid grey;
+        }
+        input[type="submit"]
+        {
+            background-color:mediumspringgreen;
+            color:black;
+            width:20%;
+            text-align: center;
+            border:none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left:9px;
+            margin-bottom: 4px;
+            padding: 10px;
+            font-size:20px;
+            font-weight: 100;
+            cursor:cell;
+            border-radius:6px;
+        }
+        h4
+        {
+            
+            margin-top: -15px;
+            font-family:'satisfy';
+        }
+        #slogan
+        {
+            
+            color:darkslategrey;
+            font-family: 'satisfy';
+            font-size: 44px;
+            margin:15px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SELP</h1>
+        <h4>Self help!</h4>
+        <h2>Join Us</h2>
+        <h4>  Please fill the required fields carefully</h4>
+    <br>
+    </header>
+    <form>
+        <main>
+        <p>Your Name:<br><input type="text" name="Name" placeholder="Your Full Name"></p>
+        <p>Your Email<br><input type="email" name="email" placeholder="Valid Email Address"></p>
+        <p>Password:<br><input type="password" name="pass" placeholder="Strong Password"></p>
+        <p>Subject:<br><select name="subject" id="subject" required>
+            <option value="">--select your profession--</option>
+            <option value="Job">Job Inquiry</option>
+            <option value="Internship">Internship</option>
+            <option value="Entrpreneur">Entrpreneur</option>
+            <option value="Housemaker">Housemaker</option>
+            <option value="Student">Student</option>
+            <option value="Vagrant">Vagrant</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select></p>
+        <p>Your Message to us:<br><textarea name="message" id="mesasge" cols="30" rows="10"></textarea></p>
+        <input type="submit" value="JOIN" class="button">
+        <p id="slogan">Be Your Own Muse!</p> 
+    </main>
+    </form>
+</body>
+</html>
